@@ -20,9 +20,9 @@
 
 .header {
 	position: absolute;
-	left: -80px;
+	left: -97px;
 	top: 15px;
-	width: 72px;
+	width: 90px;
 	z-index: 100;
 	text-align: center;
 	opacity: 1;
@@ -1315,4 +1315,8 @@
 	left: 0;
 	top: 0;
 	opacity: 0;
+}
+
+.skills .col{
+  padding-top: 10px;
 }

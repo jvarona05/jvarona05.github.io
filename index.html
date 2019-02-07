@@ -26,6 +26,7 @@
 	<link rel="stylesheet" href="css/layout.css" />
 	<link rel="stylesheet" href="css/blogs.css" />
 	<link rel="stylesheet" href="css/ionicons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.css">
 	<link rel="stylesheet" href="css/magnific-popup.css" />
 	<link rel="stylesheet" href="css/animate.css" />
 	<link rel="stylesheet" href="css/gradient.css" />
@@ -62,6 +63,44 @@
       background: #50a3a2;
       background: -webkit-linear-gradient(top left, #c33764 0%, #c446da 100%);
       background: linear-gradient(to bottom right, #2a28b3 0%, #9804b3 100%)
+    }
+
+    .category-container li {
+      /*margin-bottom: 7px;
+      float: left;
+      margin-right: 5px;
+      border: 2px solid #6c29b3;
+      border-radius: 30px;
+      padding: 0px 13px;*/
+    }
+
+    .open-tag, .close-tag{
+      font-size: 25px;
+      color: #c754da;
+    }
+
+    .tag-content {
+      position: relative;
+      top: -5px;
+      margin: 0 3px;
+    }
+
+    .tech{
+      margin: 0 10px;
+    }
+    .tech .col{
+      padding: 0;
+      padding-bottom: 13px !important;
+      font-size: 12px;
+    }
+
+    .box-item .desc .name {
+      margin: 15px 0 25px 0;
+    }
+
+    .tech .col i{
+      font-size: 25px;
+      color: white;
     }
   </style>
 	
@@ -460,19 +499,56 @@
 								<div class="box-item">
 									<div class="image">
 										<a href="images/works/work1.jpg" class="has-popup-image">
-											<img src="images/works/work1.jpg" alt="" />
+											<img src="images/works/music-rest-full-api.jpg" alt="" />
 											<span class="info">
-												<span class="ion ion-image"></span>
+                        <span class="ion ion-briefcase"></span>
 											</span>
 										</a>
 									</div>
 									<div class="desc">
-										<a href="images/works/work1.jpg" class="name has-popup-image">Motorcycle Helmet</a>
-										<div class="category">Ruby on Rails</div>
-                    <div class="category">Bootstrap</div>
-									</div>
+										<a href="images/works/work1.jpg" class="name has-popup-image">Songs Explotion</a>
+                    <div class="row tech">
+                      <div class="col col-d-4 col-t-6 col-m-12">
+                        <i class="icon-ruby-on-rails-alt"></i>
+                      </div>
+                      <div class="col col-d-4 col-t-6 col-m-12">
+                        <i class="icon-postgres-alt"></i>
+                      </div>
+                      <div class="col col-d-4 col-t-6 col-m-12">
+                        <i class="icon-heroku"></i>
+                      </div>
+                    </div>
+                  </div>
 								</div>
 							</div>
+
+              <!-- work item photo -->
+              <div class="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
+                <div class="box-item">
+                  <div class="image">
+                    <a href="images/works/work1.jpg" class="has-popup-image">
+                      <img src="images/works/school-rest-full-api.jpg" alt="" />
+                      <span class="info">
+                        <span class="ion ion-briefcase"></span>
+                      </span>
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <a href="images/works/work1.jpg" class="name has-popup-image">School Apostol</a>
+                    <div class="row tech">
+                      <div class="col col-d-4 col-t-6 col-m-12">
+                        <i class="icon-laravel"></i>
+                      </div>
+                      <div class="col col-d-4 col-t-6 col-m-12">
+                        <i class="icon-mongodb"></i>
+                      </div>
+                      <div class="col col-d-4 col-t-6 col-m-12">
+                        <i class="icon-aws"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
 							<!-- work item video -->
 							<div class="col col-d-6 col-t-6 col-m-12 grid-item video border-line-h">

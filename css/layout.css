@@ -330,7 +330,7 @@
   width: 500px;
 }*/
 
-.testimonial .pic .image:before, .card-started .profile .image:before {
+.card-started .profile .image:before {
 	content: '';
 	position: absolute;
 	top: 10px;
@@ -1360,23 +1360,18 @@
     border-radius: 50%;
 }
 .testimonial-title {
-    display: block;
     text-align: center;
-    font-size: 18px;
-    font-weight: 700;
-    color: #fff;
     margin-bottom: 30px;
-    text-transform: capitalize;
 }
 .testimonial-review{
-    background: #37a6a4;
+    background: #901aa5;
     border-radius: 10px;
     padding: 25px;
     position: relative;
 }
 .testimonial-review:before{
     content: "";
-    border-bottom: 20px solid #37a6a4;
+    border-bottom: 20px solid #901aa5;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     position: absolute;

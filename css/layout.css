@@ -351,7 +351,7 @@
 	display: block;
 	width: 100%;
 	height: auto;
-	border: 3px solid #ffffff;
+	/*border: 3px solid #ffffff;*/
 	border-radius: 100%;
 	-moz-border-radius: 100%;
 	-webkit-border-radius: 100%;

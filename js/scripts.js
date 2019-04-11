@@ -1,13 +1,4 @@
-/*
-*   Author: beshleyua
-*   Author URL: http://themeforest.net/user/beshleyua
-*/
-
-
-/*
-	Preloader
-*/
-
+/* Preloader */
 $(window).on("load", function() {
 	var preload = $('.preloader');
 	preload.find('.spinner').fadeOut(function(){
@@ -18,19 +9,11 @@ $(window).on("load", function() {
 $(function () {
 	'use strict';
 	
-	
-	/*
-		Vars
-	*/
-	
 	var width = $(window).width();
 	var height = $(window).height();
 	
 	
-	/*
-		Header Menu Desktop
-	*/
-	
+	/* Header Menu Desktop*/
 	var container = $('.container');
 	var card_items = $('.card-inner');
 	var animation_in = container.data('animation-in');
@@ -38,7 +21,6 @@ $(function () {
 	
 	$('.top-menu').on('click', 'a', function(){
 
-		/* vars */
 		var width = $(window).width();
 		var id = $(this).attr('href');
 		var h = parseFloat($(id).offset().top);
@@ -121,10 +103,7 @@ $(function () {
 	});
 	
 	
-	/*
-		Smoothscroll
-	*/
-	
+	/* Smoothscroll */
 	if((width < 1024) & $('#home-card').length) { 
 		$(window).on('scroll', function(){
 			var scrollPos = $(window).scrollTop();
@@ -140,10 +119,7 @@ $(function () {
 	}
 	
 	
-	/*
-		slimScroll
-	*/
-	
+	/* slimScroll */
     if(width > 1024) {
         $('.card-inner .card-wrap').slimScroll({
             height: '570px'
@@ -151,19 +127,13 @@ $(function () {
     }
 	
 	
-	/*
-		Hire Button
-	*/
-	
+	/* Hire Button */
 	$('.lnks').on('click', '.lnk.discover', function(){
 		$('.top-menu a[href="#contacts-card"]').trigger('click');
 	});
 	
 	
-	/*
-		Initialize masonry items
-	*/
-	
+	/* Initialize masonry items */
 	var $container = $('.grid-items');
 	
 	$container.imagesLoaded(function() {
@@ -176,44 +146,13 @@ $(function () {
 	});
 	
 
-	/*
-		12. Initialize masonry filter
-	*/
+	/* Initialize masonry filter */
 	
 	$('.filter-button-group').on('change', 'input[type="radio"]', function() {
 		if ($(this).is(':checked')) {
 			$('.f_btn').removeClass('active');
 			$(this).closest('.f_btn').addClass('active');
 		}
-		/* popup image */
-		$('.has-popup-image').magnificPopup({
-			type: 'image',
-			closeOnContentClick: true,
-			mainClass: 'popup-box',
-			image: {
-				verticalFit: true
-			}
-		});
-	
-		/* popup video */
-		$('.has-popup-video').magnificPopup({
-			disableOn: 700,
-			type: 'iframe',
-			removalDelay: 160,
-			preloader: false,
-			fixedContentPos: false,
-			mainClass: 'popup-box'
-		});
-	
-		/* popup music */
-		$('.has-popup-music').magnificPopup({
-			disableOn: 700,
-			type: 'iframe',
-			removalDelay: 160,
-			preloader: false,
-			fixedContentPos: false,
-			mainClass: 'popup-box'
-		});
 	
 		/* popup media */
 		$('.has-popup-media').magnificPopup({
@@ -225,39 +164,7 @@ $(function () {
 	});
 	
 	
-	/*
-		Popups
-	*/
-	
-	/* popup image */
-	$('.has-popup-image').magnificPopup({
-		type: 'image',
-		closeOnContentClick: true,
-		mainClass: 'popup-box',
-		image: {
-			verticalFit: true
-		}
-	});
-	
-	/* popup video */
-	$('.has-popup-video').magnificPopup({
-		disableOn: 700,
-		type: 'iframe',
-		removalDelay: 160,
-		preloader: false,
-		fixedContentPos: false,
-		mainClass: 'popup-box'
-	});
-	
-	/* popup music */
-	$('.has-popup-music').magnificPopup({
-		disableOn: 700,
-		type: 'iframe',
-		removalDelay: 160,
-		preloader: false,
-		fixedContentPos: false,
-		mainClass: 'popup-box'
-	});
+	/* Popups */
 	
 	/* popup media */
 	$('.has-popup-media').magnificPopup({
@@ -275,9 +182,7 @@ $(function () {
 	});
 	
 	
-	/*
-		Validate Contact Form
-	*/
+	/* Validate Contact Form */
 	
 	$("#cform").validate({
 		ignore: ".ignore",
@@ -322,75 +227,4 @@ $(function () {
 			});
 		}
 	});
-	
-	
-	/*
-		Validate Commect Form
-	*/
-	
-	$("#comment_form").validate({
-		rules: {
-			name: {
-				required: true
-			},
-			message: {
-				required: true
-			}
-		},
-		success: "valid",
-		submitHandler: function() {
-		}
-	});
-	
-	
-	/*
-		Google Maps
-	*/
-	
-	if($('#map').length) {
-		initMap();
-	}
-
 });
-
-
-/*
-	Google Map Options
-*/
-
-function initMap() {
-	var myLatlng = new google.maps.LatLng(40.3950986,-3.7375836); // <- Your latitude and longitude
-	var styles = [
-	{
-		"featureType": "water",
-		"stylers": [{
-			"color": "#d8dee9"
-		},
-		{
-			"visibility": "on"
-		}]
-	},
-	{
-		"featureType": "landscape",
-		"stylers": [{
-			"color": "#eeeeee"
-		}]
-	}]
-
-	var mapOptions = {
-		zoom: 14,
-		center: myLatlng,
-		mapTypeControl: false,
-		disableDefaultUI: true,
-		zoomControl: true,
-		scrollwheel: false,
-		styles: styles
-	}
-	
-	var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-	var marker = new google.maps.Marker({
-		position: myLatlng,
-		map: map,
-		title: 'We are here!'
-	});
-}

@@ -1,0 +1,76 @@
+.background.gradient {
+    background: #50a3a2;
+    background: -webkit-linear-gradient(top left, #c33764 0%, #c446da 100%);
+    background: linear-gradient(to bottom right, #2a28b3 0%, #9804b3 100%)
+}
+
+.open-tag,
+.close-tag {
+    font-size: 25px;
+    color: #c754da;
+}
+
+.tag-content {
+    position: relative;
+    top: -5px;
+    margin: 0 3px;
+}
+
+.tech {
+    margin: 0 10px;
+}
+
+.tech .col {
+    padding: 0;
+    padding-bottom: 13px !important;
+    font-size: 12px;
+}
+
+.box-item .desc .name {
+    margin: 15px 0 25px 0;
+}
+
+.tech .col i {
+    font-size: 25px;
+    color: white;
+}
+
+.blog-content h3 {
+    font-size: 15px;
+}
+
+.testimonial .person-name {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 30px;
+}
+
+.testimonial .person-job {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.info-list {
+    margin-top: 30px;
+}
+
+.info-list p {
+    margin: 0;
+}
+
+.not-available span {
+    font-size: 25px !important;
+    color: white;
+    position: relative;
+    text-align: center;
+    top: 35%;
+}
+
+.person-name:hover {
+    color: white;
+}
+
+.mfp-wrap.popup-box-inline .mfp-close:hover {
+    border-bottom: 0;
+}

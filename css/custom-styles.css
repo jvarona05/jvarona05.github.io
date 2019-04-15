@@ -78,3 +78,8 @@
 .profile .slide{
     background-image: url(../images/bg.jpg);
 }
+
+.fa-vuejs{
+    margin-top: 2px !important;
+    font-size: 30px !important;
+}
